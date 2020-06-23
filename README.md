@@ -2,7 +2,7 @@
 
 Returns an array of text content for a webpage given a jQuery-like selector and a URL.
 
-## Usage:
+## TypeScript Usage:
 
 ```typescript
 import PageTextParser from 'page-text-parser';
