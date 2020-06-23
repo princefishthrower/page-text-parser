@@ -1,6 +1,6 @@
 {
   "name": "page-text-parser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A function that returns an array of text content for a webpage given a jQuery-like selector and a URL.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
