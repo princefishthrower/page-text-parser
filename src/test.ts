@@ -1,6 +1,7 @@
 import { pageTextParser } from "./index";
 
 async function test() {
+  console.log("Test: you should see an array of coffee names below:");
   console.log(
     JSON.stringify(
       await pageTextParser(

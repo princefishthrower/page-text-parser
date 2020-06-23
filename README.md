@@ -7,12 +7,16 @@ A function that returns an array of text content for a webpage given a jQuery-li
 ```typescript
 import { pageTextParser } from 'page-text-parser';
 
-const texts = await pageTextParser('https://google.com','a');
+async function run() {
+    const texts = await pageTextParser('https://google.com','a');
 
-// prints out text content of all anchor tags on google.com. If nothing was found or there was an error with website retrieval, texts will be an empty array.
-texts.forEach(text => {
-    console.log(text);
-})
+    // prints out text content of all anchor tags on google.com. If nothing was found or there was an error with website retrieval, texts will be an empty array.
+    texts.forEach(text => {
+        console.log(text);
+    })
+}
+
+run();
 ```
 
 ## Why is the selector only 'jQuery-like'?
