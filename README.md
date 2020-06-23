@@ -1,13 +1,13 @@
 # page-text-parser
 
-Returns an array of text content for a webpage given a jQuery-like selector and a URL.
+A function that returns an array of text content for a webpage given a jQuery-like selector and a URL.
 
 ## TypeScript Usage:
 
 ```typescript
-import PageTextParser from 'page-text-parser';
+import { PageTextParser } from 'page-text-parser';
 
-const texts = await PageTextParser.parse('https://google.com','a');
+const texts = await PageTextParser('https://google.com','a');
 
 // prints out text content of all anchor tags on google.com. If nothing was found or there was an error with website retrieval, texts will be an empty array.
 texts.forEach(text => {
@@ -17,7 +17,7 @@ texts.forEach(text => {
 
 ## Why is the selector only 'jQuery-like'?
 
-I am using [Cheerio](https://cheerio.js.org/) which is a server-side implementation of JQuery, and their documentation states:
+I am using [Cheerio](https://cheerio.js.org/) which is a Node implementation of JQuery, and their documentation states:
 
 > Like jQuery, it’s the primary method for selecting elements in the document, but unlike jQuery it’s built on top of the CSSSelect library, which implements most of the Sizzle selectors.
 
