@@ -1,0 +1,30 @@
+{
+  "name": "page-text-parser",
+  "version": "1.0.0",
+  "description": "Returns an array of text content for a webpage given a jQuery-like selector and a URL.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princefishthrower/page-text-parser.git"
+  },
+  "keywords": [
+    "cheerio",
+    "jquery",
+    "website parser",
+    "pipeline"
+  ],
+  "author": "Christopher Frewin (frewin.christopher@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/princefishthrower/page-text-parser/issues"
+  },
+  "homepage": "https://github.com/princefishthrower/page-text-parser#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
