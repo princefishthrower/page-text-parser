@@ -5,7 +5,7 @@ Returns an array of text content for a webpage given a jQuery-like selector and 
 ## Usage:
 
 ```typescript
-import PageTextParser from 'page-text-parser'
+import PageTextParser from 'page-text-parser';
 
 const texts = await PageTextParser.parse('https://google.com','a');
 
