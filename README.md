@@ -19,6 +19,23 @@ async function run() {
 run();
 ```
 
+Extended usage with optional attribute value to also retrieve with the text
+
+```typescript
+import { pageTextParser } from 'page-text-parser';
+
+async function run() {
+    const texts = await pageTextParser('https://google.com','a', 'href');
+
+    // prints out an array of objects with text: and attributeValue: keys containing text content of all anchor tags and the href value of on google.com. If nothing was found or there was an error with website retrieval, texts will be an empty array.
+    texts.forEach(text => {
+        console.log(JSON.stringify(text));
+    })
+}
+
+run();
+```
+
 ## Why is the selector only 'jQuery-like'?
 
 I am using [Cheerio](https://cheerio.js.org/) which is a Node implementation of JQuery, and their documentation states:

@@ -1,7 +1,7 @@
 import { pageTextParser } from "./index";
 
-async function test() {
-  console.log("Test: you should see an array of coffee names below:");
+async function test1() {
+  console.log("Test 1: you should see an array of coffee names below:");
   console.log(
     JSON.stringify(
       await pageTextParser(
@@ -12,4 +12,19 @@ async function test() {
   );
 }
 
-test();
+test1();
+
+async function test2() {
+  console.log("Test 2: you should see an array link text and their href attribute values below:");
+  console.log(
+    JSON.stringify(
+      await pageTextParser(
+        "https://tegernseer-kaffeeroesterei.de/produkt-kategorie/kaffee-und-espresso/",
+        "a",
+        "href"
+      )
+    )
+  );
+}
+
+test2();
